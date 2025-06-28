@@ -216,6 +216,19 @@ cat /root/root.txt
 * Lateral movement via `su`
 * Privilege escalation via `sudo yum`
 
+---
+
+## Lessons Learned
+
+- Documentation is essential: I initially missed a discovered password due to poor note-taking. Always record every detail, including credentials, versions, and paths.
+- Credential reuse is common: The MySQL root password was reused by a system user. This reinforces the importance of testing credentials across multiple services and accounts.
+- Web application vulnerabilities can lead to full system compromise: A simple SQL injection ultimately led to remote code execution and root access.
+- Enumeration is key: Tools like linPEAS and thorough manual enumeration uncovered misconfigurations that enabled privilege escalation.
+- Know your tools: Leveraging tools such as sqlmap, john, Metasploit, and GTFOBins was instrumental in navigating and exploiting this box efficiently.
+- Validate findings with public CVEs and exploits: CVE-2017-8917 was publicly documented and exploited, saving time in developing a working attack chain.
+
+---
+
 ### Flags
 
 * **User flag**: /home/jjameson/user.txt
