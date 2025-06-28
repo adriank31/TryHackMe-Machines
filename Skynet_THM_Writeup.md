@@ -2,7 +2,9 @@
 # TryHackMe — Skynet | Full Walkthrough
 
 **Author:** Adrian Korwel 
+
 **Difficulty:** Medium  
+
 **Objective:** Gain root access and retrieve the flags
 
 ---
